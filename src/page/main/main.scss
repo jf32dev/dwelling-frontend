@@ -1,0 +1,111 @@
+.main-container {
+    width: 100vw;
+    height: 100vh;
+    background-color: #4A4A4A;
+    padding: 30px 0px;
+
+    .balance-checker-card {
+        width: 400px;
+        margin: auto;
+        height: 100%;
+        padding: 15px;
+
+        .card-header {
+            border: 1px solid black;
+            border-radius: 10px;
+            overflow: hidden;
+
+            .card-header-title {
+                margin-bottom: 5px;
+                padding: 15px 10px;
+                background-color: #e9e5e1;
+                border-bottom: 1px solid black;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                flex-direction: column;
+
+                >div {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    flex-direction: row;
+                    width: 100%;
+
+                    h4 {
+                        font-size: 28px;
+                        line-height: 52px;
+                        font-weight: 600;
+                    }
+                }
+
+                input {
+                    width: 100%;
+                }
+            }
+
+            >.MuiInput-root {
+                width: 100%;
+
+                #cardNumber {
+                    width: 100%;
+                    padding: 10px;
+                    background-color: white;
+                }
+
+                #cardNumber:focus {
+                    outline: none;
+                }
+            }
+        }
+
+        .invalid {
+            width: 100%;
+            text-align: center;
+            color: #FF6220;
+            padding: 10px 0px;
+            font-weight: 600;
+        }
+        .invalid.d-none {
+            display: none;
+        }
+
+        .card-content {
+            .content-header {
+                width: 100%;
+                margin: 5px 0px 10px 0px;
+
+                >.check-btn {
+                    width: 100%;
+                    padding: 10px 0px;
+                    color: white;
+                    background-color: black;
+                    border-radius: 6px;
+                }
+            }
+
+            .b-list {
+                overflow-x: hidden;
+                overflow-y: auto;
+                height: calc(100vh - 350px);
+                .b-list-item {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    border-bottom: 1px solid black;
+                    padding: 10px;
+
+                    .balance-wrap {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                    }
+
+                    svg {
+                        margin-left: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
